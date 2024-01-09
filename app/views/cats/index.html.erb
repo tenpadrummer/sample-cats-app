@@ -47,7 +47,7 @@
   <div class="card-body mx-3">
     <%# 一覧部分をturbo_frame_tagで囲う %>
     <%# id属性は"cats-list"とする %>
-    <%= turbo_frame_tag "cats-list" do %>
+    <%= turbo_frame_tag "cats-list", data: { turbo_action: :advance } do %>
       <div class="row py-2">
         <div class="col-4 mt-auto">
           <%= sort_link(@search, :name) %>
