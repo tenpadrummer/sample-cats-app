@@ -42,7 +42,7 @@ class CatsController < ApplicationController
   # PATCH/PUT /cats/1
   def update
     if @cat.update(cat_params)
-      redirect_to @cat, notice: "ねこを編集しました。"
+      
     else
       render :edit, status: :unprocessable_entity
     end
