@@ -4,4 +4,4 @@ import "./controllers"
 import * as bootstrap from "bootstrap"
 
 // Turbo Driveを無効
-Turbo.session.drive = false
+// Turbo.session.drive = false
